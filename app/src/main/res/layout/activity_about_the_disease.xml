@@ -25,6 +25,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/bolezn_behtereva" />
+
+        <TextView
+            android:id="@+id/about_the_desease_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Более подробная информация о Болезни Бехтерева"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlueLink"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
