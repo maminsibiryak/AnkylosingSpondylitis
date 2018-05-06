@@ -26,10 +26,11 @@
                 android:text="О Болезни Бехтерева" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/treatmentButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="goToTreatment"
+                android:text="Лечение" />
 
             <Button
                 android:id="@+id/button4"

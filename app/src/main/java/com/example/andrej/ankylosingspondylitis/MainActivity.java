@@ -8,11 +8,13 @@ import android.widget.Button;
 
 import com.example.andrej.ankylosingspondylitis.anotheractivity.AboutTheDiseaseActivity;
 import com.example.andrej.ankylosingspondylitis.anotheractivity.SymptomsActivity;
+import com.example.andrej.ankylosingspondylitis.anotheractivity.TreatmentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button aboutTheDisease;
     private Button aboutSymptoms;
+    private Button aboutTreatment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         aboutTheDisease = findViewById(R.id.aboutTheDiseaseButton);
         aboutSymptoms = findViewById(R.id.symptomsButton);
+        aboutTreatment = findViewById(R.id.treatmentButton);
     }
 
     public void goToTheDescriptionOfTheDisease (View view){
@@ -30,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToTheSymptoms(View view){
         Intent intent = new Intent(this, SymptomsActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToTreatment(View view){
+        Intent intent = new Intent(this, TreatmentActivity.class);
         startActivity(intent);
     }
 }
