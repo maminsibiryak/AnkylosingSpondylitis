@@ -19,7 +19,7 @@
             android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
-            tools:textColor="@color/colorPrimaryDark" />
+            tools:textColor="@color/colorBlack" />
 
         <ImageView
             android:layout_width="match_parent"

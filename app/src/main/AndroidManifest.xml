@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".anotheractivity.AboutTheDiseaseActivity"></activity>
+        <activity android:name=".anotheractivity.AboutTheDiseaseActivity" />
+        <activity android:name=".anotheractivity.SymptomsActivity"></activity>
     </application>
 
 </manifest>
