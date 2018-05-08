@@ -33,10 +33,11 @@
                 android:text="Лечение" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/causesButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="goToTheCauses"
+                android:text="Причины" />
 
         </TableRow>
 

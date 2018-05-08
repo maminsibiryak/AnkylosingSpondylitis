@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".anotheractivity.AboutTheDiseaseActivity" />
         <activity android:name=".anotheractivity.SymptomsActivity" />
-        <activity android:name=".anotheractivity.TreatmentActivity"></activity>
+        <activity android:name=".anotheractivity.TreatmentActivity" />
+        <activity android:name=".anotheractivity.CausesActivity"></activity>
     </application>
 
 </manifest>
