@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".anotheractivity.FirstSignsActivity">
+
+    <TextView
+        android:id="@+id/signsTextView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Первые признаки болезни Бехтерева следующие:"
+        android:textColor="@color/colorBlack" />
+    <TextView
+        android:id="@+id/signsTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack" />
+    <TextView
+        android:id="@+id/signsTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Если подобные признаки сохраняются у человек на протяжении нескольких месяцев, то обращение к специалисту должно быть незамедлительным. При этом нужно настаивать на консультации ревматолога."
+        android:textColor="@color/colorBlack" />
+
+
+    <!--<Spinner
+        android:id="@+id/signs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/signsTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/signsTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Если подобные признаки сохраняются у человек на протяжении нескольких месяцев, то обращение к специалисту должно быть незамедлительным. При этом нужно настаивать на консультации ревматолога."
+        android:textColor="@color/colorBlack" />-->
+
+</LinearLayout>
