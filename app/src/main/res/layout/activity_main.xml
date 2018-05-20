@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="О болезни Бехтерева" />
 
             </TableRow>
 
@@ -133,7 +133,7 @@
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Симптомы" />
 
                 <ImageButton
                     android:id="@+id/imageButtonPhysio"
@@ -149,23 +149,8 @@
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Физиотерапия" />
 
-                <ImageButton
-                    android:id="@+id/imageButtonTreatment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8treatment"
-                    android:onClick="goToTreatment"
-
-                    />
-
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
             </TableRow>
 
             <TableRow
@@ -185,7 +170,7 @@
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Первые признаки" />
 
                 <ImageButton
                     android:id="@+id/imageButtonCauses"
@@ -199,14 +184,32 @@
                     android:id="@+id/textView31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Причины" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:paddingTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:onClick="goToTreatment"
+                    android:src="@drawable/icons8treatment"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Лечение" />
+            </TableRow>
         </TableLayout>
     </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
