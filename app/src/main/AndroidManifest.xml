@@ -25,7 +25,8 @@
         <activity android:name=".anotheractivity.CausesActivity" />
         <activity android:name=".anotheractivity.FirstSignsActivity" />
         <activity android:name=".anotheractivity.PhysiotherapyActivity" />
-        <activity android:name=".anotheractivity.physiotherapy.PhotoPhysiotherapyActivity"></activity>
+        <activity android:name=".anotheractivity.physiotherapy.PhotoPhysiotherapyActivity" />
+        <activity android:name=".anotheractivity.physiotherapy.BukletPDFActivity"></activity>
     </application>
 
 </manifest>

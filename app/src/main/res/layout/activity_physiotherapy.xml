@@ -6,35 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".anotheractivity.PhysiotherapyActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/about_phisiotherapy"
-            android:textColor="@color/colorBlack" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/photoButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="фото с описанием упражнения"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:onClick="goToThePhotoPhisiotherapy"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_phisiotherapy"
+                android:textColor="@color/colorBlack" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="буклет" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/photoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToThePhotoPhisiotherapy"
+                android:text="фото с описанием упражнения"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/buklet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToThePDFPhisiotherapy"
+                android:text="буклет" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Авторские права"
+                    android:textColor="@color/colorBlueLink" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:text="@string/author" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.andrej.ankylosingspondylitis.anotheractivity.AboutTheDiseaseActivity;
 import com.example.andrej.ankylosingspondylitis.anotheractivity.CausesActivity;
@@ -21,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
     private Button aboutCauses;
     private Button aboutPhisiotherapy;
 
+    private ImageButton aboutTheDiseaseImageButton;
+    private ImageButton aboutSymptomsImageButton;
+    private ImageButton aboutTreatmentImageButton;
+    private ImageButton aboutCausesImageButton;
+    private ImageButton aboutPhisiotherapyImageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         aboutSymptoms = findViewById(R.id.symptomsButton);
         aboutTreatment = findViewById(R.id.treatmentButton);
         aboutCauses = findViewById(R.id.causesButton);
+        aboutPhisiotherapy = findViewById(R.id.physiotherapyButton);
+
+        aboutTheDiseaseImageButton = findViewById(R.id.imageButtonBB);
+        aboutSymptomsImageButton = findViewById(R.id.imageButtonSymptoms);
+        aboutTreatmentImageButton = findViewById(R.id.imageButtonTreatment);
+        aboutCausesImageButton = findViewById(R.id.imageButtonCauses);
+        aboutPhisiotherapyImageButton = findViewById(R.id.imageButtonPhysio);
     }
 
     public void goToTheDescriptionOfTheDisease (View view){
