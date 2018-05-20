@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
 
-
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -209,7 +212,9 @@
                     android:text="Лечение" />
             </TableRow>
         </TableLayout>
+
+
     </LinearLayout>
 
-
+    </HorizontalScrollView>
 </ScrollView>
