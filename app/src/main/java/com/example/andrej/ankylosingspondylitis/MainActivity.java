@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.andrej.ankylosingspondylitis.anotheractivity.AboutTheDiseaseActivity;
 import com.example.andrej.ankylosingspondylitis.anotheractivity.CausesActivity;
+import com.example.andrej.ankylosingspondylitis.anotheractivity.FirstSignsActivity;
+import com.example.andrej.ankylosingspondylitis.anotheractivity.PhysiotherapyActivity;
 import com.example.andrej.ankylosingspondylitis.anotheractivity.SymptomsActivity;
 import com.example.andrej.ankylosingspondylitis.anotheractivity.TreatmentActivity;
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button aboutSymptoms;
     private Button aboutTreatment;
     private Button aboutCauses;
+    private Button aboutPhisiotherapy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToTheCauses(View view){
         Intent intent = new Intent(this, CausesActivity.class);
+        startActivity(intent);
+    }
+    public void goToTheFirstSigns(View view){
+        Intent intent = new Intent(this, FirstSignsActivity.class);
+        startActivity(intent);
+    }
+    public void goToThePhisiotherapy(View view){
+        Intent intent = new Intent(this, PhysiotherapyActivity.class);
         startActivity(intent);
     }
 }

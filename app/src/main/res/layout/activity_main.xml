@@ -51,11 +51,27 @@
                 android:layout_height="wrap_content"
                 android:onClick="goToTheSymptoms"
                 android:text="симптомы" />
+
+            <Button
+                android:id="@+id/physiotherapyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToThePhisiotherapy"
+                android:text="ЛФК" />
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/firstSignsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToTheFirstSigns"
+                android:text="Первые признаки" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
