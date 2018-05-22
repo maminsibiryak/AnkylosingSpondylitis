@@ -5,216 +5,223 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
-    tools:context=".MainActivity"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp"
-        android:background="@color/colorGray"
-        android:orientation="vertical">
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp">
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorGray"
+            android:orientation="vertical">
 
-            <TableRow
+            <!--      <TableLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      tools:layout_editor_absoluteX="8dp"
+                      tools:layout_editor_absoluteY="8dp">
+
+                      <TableRow
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                          <Button
+                              android:id="@+id/aboutTheDiseaseButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToTheDescriptionOfTheDisease"
+                              android:text="О Болезни Бехтерева" />
+
+                      </TableRow>
+
+                      <TableRow
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                          <Button
+                              android:id="@+id/symptomsButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToTheSymptoms"
+                              android:text="симптомы" />
+
+                          <Button
+                              android:id="@+id/physiotherapyButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToThePhisiotherapy"
+                              android:text="ЛФК" />
+
+                          <Button
+                              android:id="@+id/treatmentButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToTreatment"
+                              android:text="Лечение" />
+
+                      </TableRow>
+
+                      <TableRow
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                          <Button
+                              android:id="@+id/firstSignsButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToTheFirstSigns"
+                              android:text="Первые признаки" />
+
+                          <Button
+                              android:id="@+id/causesButton"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:onClick="goToTheCauses"
+                              android:text="Причины" />
+                      </TableRow>
+
+                      <TableRow
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                      </TableRow>
+                  </TableLayout>-->
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="160dp">
 
-                <Button
-                    android:id="@+id/aboutTheDiseaseButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToTheDescriptionOfTheDisease"
-                    android:text="О Болезни Бехтерева" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
 
-            </TableRow>
+                    android:paddingTop="8dp">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/imageButtonBB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToTheDescriptionOfTheDisease"
+                        android:src="@drawable/icons8aboutbb" />
 
-                <Button
-                    android:id="@+id/symptomsButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToTheSymptoms"
-                    android:text="симптомы" />
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="О болезни Бехтерева"
+                        android:textColor="@color/colorBlack" />
 
-                <Button
-                    android:id="@+id/physiotherapyButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToThePhisiotherapy"
-                    android:text="ЛФК" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/treatmentButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToTreatment"
-                    android:text="Лечение" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
 
-            </TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToTheSymptoms"
+                        android:src="@drawable/icons8symptoms" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Симптомы"
+                        android:textColor="@color/colorBlack" />
 
-                <Button
-                    android:id="@+id/firstSignsButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToTheFirstSigns"
-                    android:text="Первые признаки" />
+                    <ImageButton
+                        android:id="@+id/imageButtonPhysio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToThePhisiotherapy"
+                        android:src="@drawable/icons8physio"
 
-                <Button
-                    android:id="@+id/causesButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="goToTheCauses"
-                    android:text="Причины" />
-            </TableRow>
+                        />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Физиотерапия"
+                        android:textColor="@color/colorBlack" />
 
-            </TableRow>
-        </TableLayout>
+                </TableRow>
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="*"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="160dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                    <ImageButton
+                        android:id="@+id/imageButtonFirstSigns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToTheFirstSigns"
+                        android:src="@drawable/icons8firstsigns" />
 
-                android:paddingTop="8dp">
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Первые признаки"
+                        android:textColor="@color/colorBlack"/>
 
-                <ImageButton
-                    android:id="@+id/imageButtonBB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8aboutbb"
-                    android:onClick="goToTheDescriptionOfTheDisease"/>
+                    <ImageButton
+                        android:id="@+id/imageButtonCauses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToTheCauses"
+                        android:src="@drawable/icons8causes" />
 
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="О болезни Бехтерева" />
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Причины"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
 
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="8dp">
+                    <ImageButton
+                        android:id="@+id/imageButtonTreatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:onClick="goToTreatment"
+                        android:src="@drawable/icons8treatment"
 
-                <ImageButton
-                    android:id="@+id/imageButtonSymptoms"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8symptoms"
-                    android:onClick="goToTheSymptoms"/>
+                        />
 
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Симптомы" />
-
-                <ImageButton
-                    android:id="@+id/imageButtonPhysio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8physio"
-                    android:onClick="goToThePhisiotherapy"
-
-                    />
-
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Физиотерапия" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="8dp">
-
-                <ImageButton
-                    android:id="@+id/imageButtonFirstSigns"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8firstsigns"
-                    android:onClick="goToTheFirstSigns"/>
-
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Первые признаки" />
-
-                <ImageButton
-                    android:id="@+id/imageButtonCauses"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:src="@drawable/icons8causes"
-                    android:onClick="goToTheCauses"/>
-
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Причины" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="8dp">
-
-                <ImageButton
-                    android:id="@+id/imageButtonTreatment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorGray"
-                    android:onClick="goToTreatment"
-                    android:src="@drawable/icons8treatment"
-
-                    />
-
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Лечение" />
-            </TableRow>
-        </TableLayout>
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Лечение"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+            </TableLayout>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
     </HorizontalScrollView>
 </ScrollView>
