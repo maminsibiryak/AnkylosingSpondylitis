@@ -10,17 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
                 android:text="@string/phisiotherapy"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -29,6 +32,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
                 android:text="1. Обхватить локти ладонями, поднять руки параллельно полу, подбородком обвести линию согнутых рук, в одну и в другую сторону, тянутся подбородком вперед. Выполнять по 4 раза в каждую сторону." />
 
             <LinearLayout
@@ -58,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="2. Руки вдоль туловища, не сгибая рук в локтевых суставах выполнять вращение плечами по 4 раза вперед и назад с максимальным усилием." />
 
             <LinearLayout
@@ -86,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="3. Обхватить локти ладонями, поднять согнутые руки над головой, выполнять наклоны в стороны по 4 раза в каждую сторону с максимальной амплитудой и значительным усилием." />
 
             <LinearLayout
@@ -114,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="4. Обхватить ладонями локти, поднять согнутые руки параллельно полу, медленно поворачивать туловище до упора в одну и в другую сторону со значительным растягивающим усилием по 4 раза в каждую сторону." />
 
             <LinearLayout
@@ -142,6 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="5. Наклонится, обхватить колени руками, потянутся грудью к коленям, затем выпрямится развести руки в сторону – вверх, прогнутся в грудном отделе. Выполнять упражнение 6-8 раз." />
 
             <LinearLayout
@@ -170,6 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="Исходное положение – лежа на спине." />
 
             <TextView
@@ -177,6 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="6. Ноги согнуты в коленях, руки вдоль туловища, попеременно отводить голень в сторону, не разводя коленей со значительным усилием. Упражнение выполнять медленно. Повторять по 4 раза каждой голенью." />
 
             <LinearLayout
@@ -205,6 +215,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="7. Согнуть руки в локтях, предплечья расположены вертикально, опираясь на локти и затылок, медленно прогнутся в грудном отделе, не отрывая таза, затем принять исходное положение. Повторить упражнение 8 раз." />
 
             <LinearLayout
@@ -233,6 +244,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="8. Одновременно поднимаем голову, не отрывая плеч, и тянем стопы на себя - посмотреть на стопы, затем опустить голову и выпрямить стопы. Упражнение повторить 6-8 раз." />
 
             <LinearLayout
@@ -261,6 +273,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="Исходное положение - лежа на животе." />
 
             <TextView
@@ -268,6 +281,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="9. Вытянуть руки перед собой, опираясь на левую руку, поднимаем правую руку вверх, одновременно поднимая верхнюю часть туловища. При этом, руки должны быть расположены параллельно полу, а туловище нельзя скручивать. Выполнять по 4-6 раз каждой рукой." />
 
             <LinearLayout
@@ -296,6 +310,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="10. Руки согнуты в локтях, ладони под подбородком, ноги выпрямлены. Поднимаем правую ногу вверх, стопа «на себя», левая нога давит в опору, затем поднимаем левую ногу вверх, а правая нога давит в опору. Выполнять по 4 раза каждой ногой." />
 
             <LinearLayout
@@ -324,6 +339,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
 11. Руки вдоль туловища, ребро ладоней вверх, одновременно поднимаем руки и туловище вверх, подбородок тянем к груди, ноги не поднимать. Выполнять 6-8 раз." />
 
@@ -353,6 +369,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
 Исходное положение – стоя на четвереньках." />
 
@@ -361,6 +378,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
 12. «Кошка». Округлить спину, голову опустить как можно ниже, таз потянуть к голове, грудной одел потянуть вверх с усилием, затем медленно прогнутся в грудном и поясничном отделах, руки в локтях не сгибать, голову вверх не поднимать. Выполнять 6-8раз." />
 
@@ -390,6 +408,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
 13. Повороты туловища в сторону, «кошечка смотрит на хвостик». Упражнение выполняется с максимальным усилием, таз движется навстречу плечу. Выполнять по 4 раза в каждую сторону." />
 
@@ -419,6 +438,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
 14. Правым коленом перешагнуть «по дуге», как бы перешагивая препятствие к левой кисти, затем повторить левым коленом, не отводить колено в сторону при перешагивании, тянуть колено необходимо вверх. Выполнять по 4 раза каждой ногой." />
 
@@ -448,8 +468,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlack"
                 android:text="
-15. Медленно вытягивать ногу назад, параллельно полу, носок стопы вытянут. Выполнять поочередно каждой ногой по 4 раза." />
+15. Медленно вытягивать ногу назад, параллельно полу, носок стопы вытянут. Выполнять поочередно каждой ногой по 4 раза."
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
