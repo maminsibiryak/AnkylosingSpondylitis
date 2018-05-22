@@ -15,9 +15,9 @@ public class PhotoPhysiotherapyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_physiotherapy);
-        aboutAuthor = findViewById(R.id.textView25);
+        /*aboutAuthor = findViewById(R.id.textView25);
         aboutAuthor.setText(Html.fromHtml(getString(R.string.author)));
-        aboutAuthor.setMovementMethod(LinkMovementMethod.getInstance());
+        aboutAuthor.setMovementMethod(LinkMovementMethod.getInstance());*/
 
     }
 }

@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        aboutTheDisease = findViewById(R.id.aboutTheDiseaseButton);
+        /*aboutTheDisease = findViewById(R.id.aboutTheDiseaseButton);
         aboutSymptoms = findViewById(R.id.symptomsButton);
         aboutTreatment = findViewById(R.id.treatmentButton);
         aboutCauses = findViewById(R.id.causesButton);
-        aboutPhisiotherapy = findViewById(R.id.physiotherapyButton);
+        aboutPhisiotherapy = findViewById(R.id.physiotherapyButton);*/
 
         aboutTheDiseaseImageButton = findViewById(R.id.imageButtonBB);
         aboutSymptomsImageButton = findViewById(R.id.imageButtonSymptoms);
